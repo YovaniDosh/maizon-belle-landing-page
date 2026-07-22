@@ -1,0 +1,83 @@
+/* ==================================================
+   MAIZON BELLE
+   Base Styles
+   Version: 1.0.0
+================================================== */
+
+body
+{
+    background:var(--color-background);
+    color:var(--color-text);
+    font-family:var(--font-body);
+    font-size:var(--fs-md);
+    line-height:1.6;
+}
+
+/* Container */
+
+.container
+{
+    width:min(90%,var(--container-width));
+    margin-inline:auto;
+
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family:var(--font-heading);
+    font-weight:var(--fw-semibold);
+    line-height:1.2;
+}
+
+/* Paragraph */
+
+p
+{
+    color:var(--color-text-light);
+}
+
+/* Section */
+
+section
+{
+    padding-block:var(--space-3xl);
+}
+
+/* Selection */
+
+::selection
+{
+    background:var(--color-primary);
+    color:white;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar
+{
+    width:10px;
+}
+
+::-webkit-scrollbar-track
+{
+    background:var(--color-background);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background:var(--color-primary);
+    border-radius:999px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background:var(--color-primary-dark);
+
+}
