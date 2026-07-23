@@ -78,72 +78,47 @@
 
     <div class="container header__container">
 
-        <a href="#" class="header__brand">
+        <a 
+            href="#hero" 
+            class="header__brand"
+            aria-label="Página inicial Maizon Belle"
+        >
 
             Maizon Belle
 
         </a>
 
+        <button
+            class="header__toggle"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"    
+        >
+            ☰
+        </button>
+
         <nav
+            id="primary-navigation"
             class="header__nav"
             aria-label="Menu principal">
 
             <ul class="header__menu">
 
-                <li>
-
-                    <a href="#hero">
-
-                        Início
-
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="#collections">
-
-                        Coleções
-
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="#about">
-
-                        Sobre
-
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="#newsletter">
-
-                        Contato
-
-                    </a>
-
-                </li>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#collections">Coleções</a></li>
+                <li><a href="#featured-products">Productos</a></li>
+                <li><a href="#newsletter">Contato</a></li>
 
             </ul>
 
         </nav>
 
         <a
-
             href="#newsletter"
-
             class="header__button"
-
         >
-
             Comprar Agora
-
         </a>
 
     </div>

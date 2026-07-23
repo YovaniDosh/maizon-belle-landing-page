@@ -1,0 +1,73 @@
+/* ===========================
+   HEADER
+=========================== */
+
+.header
+{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(250,248,245,.92);
+    backdrop-filter: blur(12px);
+    box-shadow:var(--shadow-sm);
+    z-index: var(--z-sticky);
+}
+
+.header__container
+{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    min-height:var(--header-height);
+    gap:var(--space-lg);
+}
+
+.header__brand
+{
+    font-family:var(--font-heading);
+    font-size:var(--fs-2xl);
+    font-weight:var(--fw-bold);
+    color:var(--color-primary);
+    letter-spacing:.05em;
+}
+
+.header__menu
+{
+    display:flex;
+    gap:var(--space-xl);
+}
+
+.header__menu a
+{
+    color:var(--color-text);
+    font-weight:var(--fw-medium);
+    transition:color var(--transition-fast);
+}
+
+.header__menu a:hover
+{
+    color:var(--color-primary);
+}
+
+.header__button
+{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:12px 24px;
+    background:var(--color-primary);
+    color:#fff;
+    border-radius:var(--radius-pill);
+    transition:all var(--transition-normal);
+}
+
+.header__button:hover
+{
+    transform:translateY(-2px);
+    box-shadow:var(--shadow-md);
+}
+
+.header__toggle
+{
+    display:none;
+}
